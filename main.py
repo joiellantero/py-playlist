@@ -39,7 +39,9 @@ class Playlist:
             total_duration += int(track[3])
         ty_res = time.gmtime(total_duration)
         res = time.strftime("%H:%M:%S", ty_res)
+        divider('DURATION')
         print(f'Total duration: {res}')
+        divider('')
 
 
 if __name__ == '__main__':
@@ -51,6 +53,7 @@ if __name__ == '__main__':
         myTrack.enqueue(Track(input_list[0], input_list[1], input_list[2]))
 
     myTrack.view()
+    myTrack.duration()
     myTrack.remove(2)
     myTrack.view()
     myTrack.duration()
