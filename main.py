@@ -1,3 +1,12 @@
+def divider(text):
+    if text:
+        length = (text.join(text)).count(text) + 1
+        half = round(length/2) + 1
+        print('-' * (20 - half), f'{text}', '-' * (20 - half))
+        return
+    print('-' * 40)
+
+
 class Track:
     def __init__(self, title, artist, duration):
         self.title = title
@@ -10,24 +19,19 @@ class Playlist:
         self.tracks = []
 
     def enqueue(self, track):
-        self.tracks.append(f'{track.title} - {track.artist} - {track.duration}')
+        index = len(self.tracks) + 1
+        self.tracks.append(f'{index} - {track.title} - {track.artist} - {track.duration}')
 
-    # def remove(self, track_number):
-    #
+    def remove(self, track_number):
+        self.tracks.remove(self.tracks[track_number - 1])
 
     def view(self):
-        Playlist.__init__(self)
-        print(str(self.__dict__))
+        divider('VIEW')
+        for track in self.tracks:
+            print(track)
+        divider('')
 
     # def duration(self):
-
-    def __str__(self):
-        return (
-            '\n' + '\n'.join(
-                ('{} = {}'.format(item, self.__dict__[item])
-                    for item in self.__dict__)
-            )
-        )
 
 
 if __name__ == '__main__':
@@ -38,5 +42,6 @@ if __name__ == '__main__':
         input_list = input().split(',')
         myTrack.enqueue(Track(input_list[0], input_list[1], input_list[2]))
 
-    print(myTrack)
-    # myTrack.view()
+    myTrack.view()
+    myTrack.remove(2)
+    myTrack.view()
