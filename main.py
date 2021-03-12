@@ -1,3 +1,5 @@
+import time
+
 def divider(text):
     if text:
         length = (text.join(text)).count(text) + 1
@@ -20,7 +22,7 @@ class Playlist:
 
     def enqueue(self, track):
         index = len(self.tracks) + 1
-        self.tracks.append(f'{index} - {track.title} - {track.artist} - {track.duration}')
+        self.tracks.append([index, track.title, track.artist, track.duration])
 
     def remove(self, track_number):
         self.tracks.remove(self.tracks[track_number - 1])
@@ -28,10 +30,11 @@ class Playlist:
     def view(self):
         divider('VIEW')
         for track in self.tracks:
-            print(track)
+            print(f'{track[0]} - {track[1]} - {track[2]} - {track[3]}')
         divider('')
 
-    # def duration(self):
+    # def duration(self, sec):
+
 
 
 if __name__ == '__main__':
