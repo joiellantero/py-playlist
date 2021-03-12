@@ -33,8 +33,13 @@ class Playlist:
             print(f'{track[0]} - {track[1]} - {track[2]} - {track[3]}')
         divider('')
 
-    # def duration(self, sec):
-
+    def duration(self):
+        total_duration = 0
+        for track in self.tracks:
+            total_duration += int(track[3])
+        ty_res = time.gmtime(total_duration)
+        res = time.strftime("%H:%M:%S", ty_res)
+        print(f'Total duration: {res}')
 
 
 if __name__ == '__main__':
@@ -48,3 +53,4 @@ if __name__ == '__main__':
     myTrack.view()
     myTrack.remove(2)
     myTrack.view()
+    myTrack.duration()
