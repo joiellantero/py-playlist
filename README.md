@@ -14,24 +14,24 @@ A Python program (OOP) that has the basic functionalities of creating a playlist
 - Run the program
     - Sample input
       ```shell
-      $ 3
-      $ New Light,John Mayer,216
-      $ Electric U,Kid Bloom,171
-      $ Supalonely,BENEE,223
+      3
+      New Light,John Mayer,216
+      Electric U,Kid Bloom,171
+      Supalonely,BENEE,223
       ```
     - Sample output (when calling the `view()` method)
       ```shell
-      $ ----------------- VIEW -----------------
-      $ 1 - New Light - John Mayer - 216
-      $ 2 - Electric U - Kid Bloom - 171
-      $ 3 - Supalonely - BENEE - 223
-      $ ----------------------------------------
+      ----------------- VIEW -----------------
+      1 - New Light - John Mayer - 216
+      2 - Electric U - Kid Bloom - 171
+      3 - Supalonely - BENEE - 223
+      ----------------------------------------
       ```
     - Sample output (when calling the `duration()` method)
       ```shell
-      $ --------------- DURATION ---------------
-      $ Total duration: 00:07:19
-      $ ----------------------------------------
+      --------------- DURATION ---------------
+      Total duration: 00:07:19
+      ----------------------------------------
       ```
       
 ### 👨🏻‍💻 Author
