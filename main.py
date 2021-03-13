@@ -21,22 +21,21 @@ class Playlist:
         self.tracks = []
 
     def enqueue(self, track):
-        index = len(self.tracks) + 1
-        self.tracks.append([index, track.title, track.artist, track.duration])
+        self.tracks.append(track)
 
     def remove(self, track_number):
         self.tracks.remove(self.tracks[track_number - 1])
 
     def view(self):
         divider('VIEW')
-        for track in self.tracks:
-            print(f'{track[0]} - {track[1]} - {track[2]} - {track[3]}')
+        for index, track in enumerate(self.tracks):
+            print(f'{index + 1} - {track.title} - {track.artist}')
         divider('')
 
     def duration(self):
         total_duration = 0
         for track in self.tracks:
-            total_duration += int(track[3])
+            total_duration += int(track.duration)
         ty_res = time.gmtime(total_duration)
         res = time.strftime("%H:%M:%S", ty_res)
         divider('DURATION')
