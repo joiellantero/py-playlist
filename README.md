@@ -22,15 +22,15 @@ A Python program (OOP) that has the basic functionalities of creating a playlist
     - Sample output (when calling the `view()` method)
       ```shell
       ----------------- VIEW -----------------
-      1 - New Light - John Mayer - 216
-      2 - Electric U - Kid Bloom - 171
-      3 - Supalonely - BENEE - 223
+      1 - New Light - John Mayer
+      2 - Electric U - Kid Bloom
+      3 - Supalonely - BENEE
       ----------------------------------------
       ```
     - Sample output (when calling the `duration()` method)
       ```shell
       --------------- DURATION ---------------
-      Total duration: 00:07:19
+      Total duration: 00:10:10
       ----------------------------------------
       ```
       
