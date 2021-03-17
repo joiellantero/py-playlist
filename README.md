@@ -5,13 +5,13 @@ A Python program (OOP) that has the basic functionalities of creating a playlist
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ### 🚀 Quickstart
-- Fork the repository or
-- Clone the repository
+1. Fork the repository or
+2. Clone the repository
     ```shell
     $ git clone https://github.com/joiellantero/py-playlist.git
     ```
-- Navigate to the project
-- Run the program
+3. Navigate to the project
+4. Run the program
     - Sample input
       ```shell
       3
@@ -33,6 +33,7 @@ A Python program (OOP) that has the basic functionalities of creating a playlist
       Total duration: 00:10:10
       ----------------------------------------
       ```
+5. Star this repo if you like it!
       
 ### 👨🏻‍💻 Author
 - [Joie Llantero](https://joiellantero.codes/)
