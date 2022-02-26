@@ -36,7 +36,7 @@ A Python program (OOP) that has the basic functionalities of creating a playlist
 5. Star this repo if you like it!
       
 ### 👨🏻‍💻 Author
-- [Joie Llantero](https://joiellantero.codes/)
+- [Joie Llantero](https://github.com/joiellantero)
 
 ### 📄 License 
 - [MIT license](http://opensource.org/licenses/mit-license.php)
