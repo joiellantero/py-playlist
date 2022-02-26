@@ -1,6 +1,6 @@
 # Py-Playlist
 
-A Python program (OOP) that has the basic functionalities of creating a playlist, i.e., add, remove, and view.
+A simple program using OOP that has the basic functionalities of creating a playlist, i.e., add, remove, and view.
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
